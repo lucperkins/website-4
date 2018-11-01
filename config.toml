@@ -6,6 +6,7 @@ enableRobotsTxt = true
 
 [params.logos]
 navbar = "graphql-rectangle.svg"
+footer = "graphql-icon.svg"
 
 [params.home]
 subtitle = "A foundation devoted to something or other"

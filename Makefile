@@ -1,7 +1,8 @@
 serve:
 	hugo server \
 	--buildDrafts \
-	--buildFuture
+	--buildFuture \
+	--disableFastRender
 
 production-build:
 	hugo \
