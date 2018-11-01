@@ -14,18 +14,16 @@ $primary: $pink
 
 $dark: $off-black
 
-//$navbar-item-img-max-height: 4rem
+$navbar-height: 4rem
+$navbar-item-img-max-height: 3rem
 $family-sans-serif: 'Roboto', sans-serif
 
 @import "bulma/sass/utilities/derived-variables"
 @import "bulma/bulma"
 
-.bg-image
+.hero
   background-color: $dark
   background-image: url({{ "img/hero-bg.png" | relURL }})
-
-.hero
-  background: inherit
 
 // Ensure sticky footer
 .page

@@ -1,0 +1,24 @@
+{{- $home     := .Site.BaseURL }}
+{{- $title    := .Site.Title }}
+{{- $subtitle := .Site.Params.home.subtitle | markdownify }}
+{{- $buttons  := .Site.Params.home.buttons }}
+<section class="hero is-dark is-medium has-text-centered">
+  <div class="hero-body">
+    <div class="container">
+      <p class="title is-size-1 is-size-2-mobile is-spaced">
+        {{ $title }}
+      </p>
+      <p class="subtitle is-size-2 is-size-3-mobile">
+        {{ $subtitle }}
+      </p>
+  
+      <div class="buttons is-centered">
+        {{- range $buttons }}
+        <a class="button is-medium is-dark is-inverted is-outlined has-text-weight-light" href="{{ .link | relURL }}">
+          {{ .text }}
+        </a>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</section>

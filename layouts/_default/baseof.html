@@ -4,6 +4,8 @@
     {{ partial "css.html" . }}
   </head>
   <body class="page has-navbar-fixed-top">
+    {{ partial "navbar.html" . }}
+    
     <main class="main">
       {{ block "main" . }}
       {{ end }}
