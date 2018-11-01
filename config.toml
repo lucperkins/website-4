@@ -1,0 +1,23 @@
+baseURL = "https://graphqlfoundation.io"
+languageCode = "en-us"
+title = "The GraphQL Foundation"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableRobotsTxt = true
+
+[params.logos]
+navbar = "graphql-rectangle.svg"
+
+[params.home]
+subtitle = "A foundation devoted to something or other"
+
+[[params.home.buttons]]
+text = "Getting started"
+link = "/docs/getting-started"
+
+[[params.home.buttons]]
+text = "Learn more"
+link = "/learn"
+
+[[params.nav]]
+text = "Docs"
+link = "/docs"

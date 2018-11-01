@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{- $title    := .Site.Title }}
+{{- $subtitle := .Site.Params.home.subtitle | markdownify }}
+{{- $buttons  := .Site.Params.home.buttons }}
+{{- $logo     := .Site.Params.logos.navbar }}
+{{- $logoUrl  := printf "img/logos/%s" $logo | relURL }}
+<section class="bg-image">
+  <section class="hero is-dark is-medium has-text-centered">
+    <div class="container">
+      <div class="hero-head">
+        <nav class="navbar is-fixed-top is-dark">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item">
+                <img src="{{ $logoUrl }}">
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+        <p class="title is-size-1 is-size-2-mobile is-spaced">
+          {{ $title }}
+        </p>
+        <p class="subtitle is-size-2 is-size-3-mobile">
+          {{ $subtitle }}
+        </p>
+
+        <div class="buttons is-centered">
+          {{- range $buttons }}
+          <a class="button is-medium is-dark is-inverted is-outlined has-text-weight-light" href="{{ .link | relURL }}">
+            {{ .text }}
+          </a>
+          {{- end }}
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+{{ end }}
