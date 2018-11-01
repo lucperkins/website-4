@@ -1,0 +1,24 @@
+{{- $home  := .Site.Params.home }}
+{{- $info  := $home.info | markdownify }}
+{{- $about := $home.about | markdownify }}
+<section class="section">
+  <div class="container">
+    <div class="content is-large">
+      {{ $info }}
+    </div>
+  </div>
+</section>
+
+<a id="about"></a>
+<section class="section">
+  <div class="container">
+    <p class="title is-size-2 is-size-3-mobile has-text-weight-light">
+      About the Foundation
+    </p>
+
+    <hr class="has-background-primary" />
+    <div class="content is-medium">
+      {{ $about }}
+    </div>
+  </div>
+</section>

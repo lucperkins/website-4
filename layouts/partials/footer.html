@@ -1,0 +1,12 @@
+{{- $year    := now.Year }}
+{{- $logo    := .Site.Params.logos.footer }}
+{{- $logoUrl := printf "img/logos/%s" $logo | relURL }}
+<footer class="footer has-text-centered">
+  <div class="container">
+    <img src="{{ $logoUrl }}" class="is-footer-logo">
+
+    <p class="is-size-5 has-text-grey-lighter">
+      &copy; {{ $year }} The GraphQL Foundation
+    </p>
+  </div>
+</footer>

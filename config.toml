@@ -1,0 +1,35 @@
+baseURL = "https://graphqlfoundation.io"
+languageCode = "en-us"
+title = "The GraphQL Foundation"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+enableRobotsTxt = true
+
+[params.logos]
+hero   = "graphql-icon.svg"
+navbar = "graphql-rectangle.svg"
+footer = "graphql-icon.svg"
+
+[params.home]
+subtitle = "A vendor-neutral foundation providing unified governance and stewardship of GraphQL"
+
+info = """
+[GraphQL](https://graphql.org) is a data query language and specification developed internally by Facebook in 2012 before being publicly open sourced in 2015. It provides an alternative to REST-based architectures that increases developer productivity and minimizes the amount of data transferred between client and server. GraphQL is used in production by hundreds of organizations of all sizes, including Facebook, Credit Karma, GitHub, Intuit, PayPal, the New York Times, and many more.
+
+As application development shifts towards microservice architectures, with a corresponding emphasis on flexibility and speed to market, tools like GraphQL are redefining API design and client-server interaction to improve the developer experience. GraphQL makes cross-platform and mobile development much simpler with availability in the programming language of your choice, while allowing developers to create seamless user experiences for their customers.  
+"""
+
+about = """
+Facebook, Twitter, Shopify, Elementl, Hasura, and Prisma are working together to form a new, vendor-neutral foundation that will provide unified governance and stewardship for GraphQL.
+
+Hosted under the [Linux Foundation](https://linuxfoundation.org), the nonprofit organization enabling mass innovation through open source, the Foundation’s mission will be to enable widespread adoption and help accelerate development of GraphQL and the surrounding ecosystem.
+
+The Foundation will combine resources to provide financial and intellectual resources, infrastructure, outreach services, events, and training. We invite others to join us to empower the community and ensure long-term technical success for GraphQL. To join or for more information, email: info@gql.foundation and/or or join this mailing list.≈
+"""
+
+[[params.nav]]
+text = "About"
+link = "#about"
+
+[[params.nav]]
+text = "FAQ"
+link = "#faq"

@@ -1,0 +1,38 @@
+{{- $home     := .Site.BaseURL }}
+{{- $title    := .Site.Title }}
+{{- $subtitle := .Site.Params.home.subtitle | markdownify }}
+{{- $buttons  := .Site.Params.home.buttons }}
+{{- $logo     := .Site.Params.logos.hero }}
+{{- $logoUrl  := printf "img/logos/%s" $logo | relURL }}
+<section class="hero is-dark is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+     <div class="columns is-vcentered">
+       <div class="column is-4">
+          <img class="is-hero-logo" src="{{ $logoUrl }}">
+       </div>
+       <div class="column is-8">
+          <p class="title is-size-1 is-size-2-mobile has-text-weight-light">
+            {{ $title }}
+          </p>
+
+          <hr class="has-background-primary" />
+
+          <p class="subtitle is-size-3 is-size-4-mobile has-text-weight-light">
+            {{ $subtitle }}
+          </p>
+      
+          {{- with $buttons }}
+          <div class="buttons is-centered">
+            {{- range . }}
+            <a class="button is-medium is-dark is-inverted is-outlined has-text-weight-light" href="{{ .link | relURL }}">
+              {{ .text }}
+            </a>
+            {{- end }}
+          </div>
+          {{- end }}
+       </div>
+     </div>
+    </div>
+  </div>
+</section>
