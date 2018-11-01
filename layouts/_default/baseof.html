@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     <title>{{ block "title" . }}{{ end }}</title>
+    <link rel="shortcut icon" href="{{ "favicon.svg" | relURL }}">
     {{ partial "css.html" . }}
   </head>
   <body class="page has-navbar-fixed-top">
