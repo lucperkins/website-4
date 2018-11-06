@@ -1,0 +1,16 @@
+- q: What is being announced?
+  a: A new, neutral foundation is being developed to provide unified governance and vendor-neutral stewardship for GraphQL, as well as oversight of funding and operations/marketing staffing resources are held in a neutral fashion.
+- q: Why did the GraphQL community decide to start a foundation? Why is a foundation needed? 
+  a: As seen with countless other open source projects, providing a neutral home for the community to collaborate will encourage more participation and contribution. Foundations enable the community to spread responsibilities and costs for infrastructure out - helping to increase overall investment - while providing more opportunities to get involved. 
+- q: Why should developers care? 
+  a: In addition to neutral governance ensuring equal treatment in the community, the foundation will provide more resources for the GraphQL community which will benefit all contributors. Some examples of things the foundation will help with are organizing events and working groups, formalizing governance structures, providing marketing support to the project, and handling IP and other legal issues as they arise.
+- q: Why is GraphQL growing so quickly? 
+  a: GraphQL addresses many of the limitations of traditional REST APIs. It enables clients to specify exactly what data is needed, makes it easier to aggregate data from multiple sources, and uses a type system to describe data.
+- q: Who is using GraphQL? 
+  a: GraphQL was created at Facebook and is being used in production by a [variety of high scale companies](https://graphql.org/users/) such as Atlassian, GitHub, Shopify, Twitter, Pinterest and Yelp. GraphQL continues to power hundreds of billions of API calls a day at Facebook.
+- q: How will this impact the technical direction of GraphQL?
+  a: The technical communities of Linux Foundation projects are independent, and GraphQL will continue to develop according to its own road maps and timetables. The Linux Foundation accelerates the development of open source projects by providing the underlying assistance and governance that is necessary for collaborative work, including legal, infrastructure, and support for developers, events, marketing and community facilitation.   
+- q: What are the next steps in the process? 
+  a: The next steps are to first finalize the list of founding members of the new foundation. A governance structure will then be established, legal entities formed, domains and trademarks transferred. A governing board, technical advisory committee and marketing/outreach committee will all be elected. We plan to do this over the coming months with Facebook and the GraphQL community.
+- q: How do I get involved?
+  a: Developers can already contribute to the project at https://github.com/graphql as they have. Organizations interested in becoming members of the new foundation and shaping its governance should visit the site [gql.foundation](https://gql.foundation) sign up at [graphql-formation@lists.linuxfoundation.org](mailto:graphql-formation@lists.linuxfoundation.org).

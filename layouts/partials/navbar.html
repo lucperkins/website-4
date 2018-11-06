@@ -1,0 +1,29 @@
+{{- $home    := .Site.BaseURL }}
+{{- $logo    := .Site.Params.logos.navbar }}
+{{- $logoUrl := printf "img/logos/%s" $logo | relURL }}
+{{- $nav     := .Site.Params.nav }}
+<nav class="navbar is-fixed-top has-shadow">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="{{ $home }}">
+        <img src="{{ $logoUrl }}" alt="GraphQL Foundation navbar logo">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        {{- range $nav }}
+        <a class="navbar-item" href="{{ .link }}">
+          {{ .text }}
+        </a>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</nav>

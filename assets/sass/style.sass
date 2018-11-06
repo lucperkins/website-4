@@ -1,0 +1,70 @@
+@charset "utf-8"
+
+@url(https://fonts.googleapis.com/css?family=Roboto:300,400,700)
+
+// GraphQL color palette
+$pink: #dd1797
+$off-black: #181e26
+$purple: #2a3745
+  
+@import "bulma/sass/utilities/initial-variables"
+@import "bulma/sass/utilities/functions"
+
+$primary: $pink
+
+$dark: $off-black
+$link: $primary
+$link-hover: $grey-light
+
+$navbar-height: 5rem
+$navbar-item-img-max-height: 4rem
+$navbar-burger-color: $primary
+$navbar-item-hover-background-color: $white
+$family-sans-serif: 'Roboto', sans-serif
+
+@import "bulma/sass/utilities/derived-variables"
+@import "bulma/bulma"
+
+.hero
+  background-color: $dark
+  background-image: url({{ "img/hero-bg.png" | relURL }})
+
+// Ensure sticky footer
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+  .main
+    flex: 1
+
+// Footer
+.footer
+  background-color: $purple
+
+  .is-footer-logo
+    margin-bottom: 2rem
+
+.main
+  margin-bottom: 5rem
+
+.is-hero-logo
+  +mobile
+    width: 30%
+  +tablet
+    width: 45%
+
+.navbar-item
+  color: $dark
+  font-size: 1.25rem
+
+.is-faq-q
+  color: $primary
+  font-weight: bold
+
+.is-faq-answer
+  margin-left: 1.8rem
+
+.faq
+  //border: 1px solid red
+  margin-bottom: 2rem
